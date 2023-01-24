@@ -18,10 +18,10 @@ const db = mongoose.connection
 db.on('error', (err) => { console.error(err) })
 db.once('open', () => { console.log('DB started successfully') })
 
-const arrayTest = []
-arrayTest.forEach((item, index) => {
-  console.log(item, index)
-})
+// const arrayTest = []
+// arrayTest.forEach((item, index) => {
+//   console.log(item, index)
+// })
 
 const User = UserRegistration()
 const Book = BookRegistration()
