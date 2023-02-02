@@ -21,7 +21,7 @@ function generateToken(user) {
   return jwt.sign({ data: user }, tokenSecret, { expiresIn: '24h' })
 }
 
-router.get('/login', (req, res) => {
+router.get('/loginxx', (req, res) => {
   User.findOne({ email: req.body.email })
     .then((user) => {
       if (!user) res.status(404).json({ error: 'no user with that email found' })
